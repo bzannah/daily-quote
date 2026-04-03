@@ -41,9 +41,10 @@ with open("current-quote.json", "w", encoding="utf-8") as f:
 print(f"Quote set: \"{pick['quote'][:60]}...\" — {pick['author']}")
 PYEOF
 
-# Git commit and push
+# Git commit and push (pull --rebase first to avoid divergence rejections)
 git add index.html current-quote.json
 git commit -m "chore: quote update — $(date '+%Y-%m-%d %H:%M')"
+git pull --rebase origin main
 git push origin main
 
 echo "✅ Done — quote updated and pushed to GitHub."
