@@ -1,3 +1,10 @@
 cron.log
 .DS_Store
 .quote-env
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
