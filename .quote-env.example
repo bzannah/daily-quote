@@ -1,0 +1,10 @@
+# Token for the account that creates the quote branch, opens the PR, and merges it.
+QUOTE_GITHUB_TOKEN=ghp_author_token_here
+
+# Token for a different GitHub user with write access to the repo.
+# GitHub does not allow the PR author to approve their own PR.
+QUOTE_GITHUB_REVIEW_TOKEN=ghp_reviewer_token_here
+
+# Optional settings:
+# QUOTE_BASE_BRANCH=main
+# QUOTE_MERGE_METHOD=merge
